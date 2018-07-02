@@ -39,6 +39,8 @@
 
     console.log(`Sort Arry : ${A.sort()}`);
     console.log(A);
+    delete A[1];
+    console.log(A);
 
     B = A.splice(0,A.length);
     console.log(A);
