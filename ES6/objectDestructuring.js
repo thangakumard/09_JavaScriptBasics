@@ -9,4 +9,4 @@ const city = address.city;
 const country = address.country;
 
 
-const {street: st} = address;
+const {street: st, city, country} = address;
