@@ -39,9 +39,8 @@ var sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue) {
 
 //Sum of values in an object array
 var initialValue = 0;
-var sum = [{x: 1}, {x:2}, {x:3}].reduce(function (accumulator, currentValue) {
-    return accumulator + currentValue.x;
-},initialValue)
+const add = (accumulator,currentValue) => accumulator + currentValue.x;
+var sum = [{x: 1}, {x:2}, {x:3}].reduce(add,initialValue)
 
 console.log(sum) // logs 6
 

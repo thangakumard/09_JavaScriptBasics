@@ -34,3 +34,9 @@ function myFunction2(x, y, z) {
  }
 var args = [0, 1, 2];
 myFunction2(...args);
+//*******************************/
+
+var numbers = [1,2,3,4];
+console.log(Math.max.apply(null,numbers)); // without spread operator
+console.log(Math.max(...numbers));
+
