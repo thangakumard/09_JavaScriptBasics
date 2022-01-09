@@ -52,5 +52,8 @@
 
     //Since JavaScript arrays do not have a max() method, you can apply the Math.max() method instead.
     console.log(Math.max.apply(null, [1,2,3])); // Will also return 3
+
+    const array1 = [1, 3, 2,5];
+    console.log(Math.max(...array1));
  }
  arrayFunction();

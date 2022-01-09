@@ -1,6 +1,6 @@
-const towSum = function(nums, target){
+const towSum = (nums, target) => {
     let result = [];
-    nums.forEach((v, i, arr) => {
+    nums.forEach((v, i) => {
         let k = nums.indexOf(target - v, i+1);
         if (k !== -1) {
             result.push([v,nums[k]]);
