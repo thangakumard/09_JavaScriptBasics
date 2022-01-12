@@ -1,9 +1,8 @@
 //Reference https://www.youtube.com/watch?v=MfxBfRD0FVU
-class Particle{
-    constructor(x, y, square){
+class SquareP{
+    constructor(x, y){
         this.x = x;
         this.y = y;
-        this.square = square;
     }
 
     update(){
@@ -14,6 +13,6 @@ class Particle{
     show(){
         stroke(255);
         strokeWeight(24);
-        point(this.x, this.y);
+        square(this.x, this.y, 10);
     }
 }

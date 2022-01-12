@@ -1,9 +1,8 @@
 //Reference https://www.youtube.com/watch?v=MfxBfRD0FVU
 class Particle{
-    constructor(x, y, square){
+    constructor(x, y){
         this.x = x;
         this.y = y;
-        this.square = square;
     }
 
     update(){

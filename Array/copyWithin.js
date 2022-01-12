@@ -1,15 +1,16 @@
 //The copyWithin() method shallow copies part of an array to another location in the same array and returns it, without modifying its size.
 
 [1, 2, 3, 4, 5].copyWithin(-2);
+console.log([1, 2, 3, 4, 5].copyWithin(-2));
 // [1, 2, 3, 1, 2]
 
-[1, 2, 3, 4, 5].copyWithin(0, 3);
+console.log([1, 2, 3, 4, 5].copyWithin(0, 3));
 // [4, 5, 3, 4, 5]
 
-[1, 2, 3, 4, 5].copyWithin(0, 3, 4);
+console.log([1, 2, 3, 4, 5].copyWithin(0, 3, 4));
 // [4, 2, 3, 4, 5]
 
-[1, 2, 3, 4, 5].copyWithin(-2, -3, -1);
+console.log([1, 2, 3, 4, 5].copyWithin(-2, -3, -1));
 // [1, 2, 3, 3, 4]
 
 [].copyWithin.call({length: 5, 3: 1}, 0, 3);
