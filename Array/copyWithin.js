@@ -1,5 +1,10 @@
 //The copyWithin() method shallow copies part of an array to another location in the same array and returns it, without modifying its size.
 
+/*
+copyWithin(target, start)
+copyWithin(target, start, end)
+*/
+
 [1, 2, 3, 4, 5].copyWithin(-2);
 console.log([1, 2, 3, 4, 5].copyWithin(-2));
 // [1, 2, 3, 1, 2]
