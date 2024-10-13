@@ -9,7 +9,7 @@ input: abcd-e-f%g output: aBCDEFG
 input: cats AND*Dogs-are Awesome output: catsAndD AreAwesome
 */
 
- Stringchall= (str) => {
+var Stringchall = function (str) {
    //let words = str.split(/\W+/);
    let words = str.split(/[^a-zA-Z]+/)
 
